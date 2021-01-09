@@ -42,7 +42,7 @@ app.layout = html.Div(
         children=[
             html.Div(
                 children=[
-                    html.Div(children= "Region", className="menu-title"),
+                    html.Div(children= "Região", className="menu-title"),
                     dcc.Dropdown(
                         id="region-filter",
                         options=[
@@ -57,7 +57,7 @@ app.layout = html.Div(
             ),
             html.Div(
                 children = [
-                    html.Div(children="Type", className="menu-title"),
+                    html.Div(children="Tipo", className="menu-title"),
                     dcc.Dropdown(
                         id = "type-filter",
                         options = [
@@ -74,7 +74,7 @@ app.layout = html.Div(
             html.Div(
                 children=[
                     html.Div(
-                        children="Date Range",
+                        children="Intervalo da data",
                         className="menu-title"
                     ),
                     dcc.DatePickerRange(
@@ -142,7 +142,7 @@ def update_charts(region, avocado_type, start_date, end_date):
         ],
         "layout": {
             "title": {
-                "text": "Average Price of Avocados",
+                "text": "Preço Médio do Abacate",
                 "x": 0.05,
                 "xanchor": "left",
             },
@@ -162,7 +162,7 @@ def update_charts(region, avocado_type, start_date, end_date):
         ],
         "layout": {
             "title": {
-                "text": "Avocados Sold",
+                "text": "Abacates Vendidos",
                 "x": 0.05,
                 "xanchor": "left"
             },
